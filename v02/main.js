@@ -25,3 +25,10 @@ let height = 7
 let triangleArea = (base, height) => base*height/2
 console.log(`El área de un triángulo de base 
 	${base} y altura ${height} es:  ${triangleArea(base, height)}`);
+
+
+// área de un cuadrado
+
+let lado = 4
+let cuadradoArea = (lado) => lado*lado
+console.log(`El área de un cuadrado de lado ${lado} es: ${cuadradoArea(lado)}`);
