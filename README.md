@@ -111,3 +111,12 @@ console.log(p1.distancia(p2))
 p2.moverEnY(-4)
 console.log(p1.distancia(p2))
 ```
+
+## Scope de las variables
+Conjunto de variables o funciones a las cuales podemos acceder en una derterminada linea de código.
+
+## Hosting
+Eleva las variables(var) a primera instancia
+
+## Closes
+Funciones que revuerdan el scope (entorno) en el cual fueron creadas y pueden acceder a todas las variables, funciones que pertenecen a ese scope, pero con los valores que tienen esas variables, funciones al momento momento en que invocamos a la función closes.

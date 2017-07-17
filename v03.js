@@ -35,13 +35,13 @@ const
 let canWatchStarWars7 = (name, age, isWithAdult = false ) => {
 	if (age >= pgStarWars7) {
 	alert(`${name} puede pasar a ver ${starWars7}`)
-}else if(isWithAdult){
-	alert(`${name} puede pasar a ver ${starWars7}.
-	Aunque su edad es ${age}, se ecuentra acompañada/o por un adutlto`)
-}else{
-	alert(`${name} no puede pasar a ver ${starWars7}.
-	Tiene ${age} años y necesita tener ${pgStarWars7}`)
-}
+	}else if(isWithAdult){
+		alert(`${name} puede pasar a ver ${starWars7}.
+		Aunque su edad es ${age}, se ecuentra acompañada/o por un adutlto`)
+	}else{
+		alert(`${name} no puede pasar a ver ${starWars7}.
+		Tiene ${age} años y necesita tener ${pgStarWars7}`)
+	}
 } 
 
 canWatchStarWars7(name, edadName);
