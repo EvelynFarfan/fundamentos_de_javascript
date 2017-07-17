@@ -43,7 +43,7 @@ console.log(p1.distancia(p2))
 
 ```
 
-**2.** Creando un objeto y usando Createobject().
+**2.** Creando un objeto y usando Createobject() / Declarar objetos con Object.create.
 
 ```javascript
 const Punto = {
@@ -80,7 +80,7 @@ console.log(p1.distancia(p2))
 
 ```
 
-**3.** Creando una clase y creando una instancia de la misma. / Sintaxis Sugar
+**3.** Creando una clase y creando una instancia de la misma. / Sintaxis Sugar / Declarar objectos con class
 
 ```javascript
 class Punto {
