@@ -11,7 +11,7 @@ El indentificador no puede ser reasignado.
 
 ## Hay tres formas de crear objetos:
 
-1. Creando una función y usando prototipos.
+**1.** Creando una función y usando prototipos.
 
 ```javascript
 function Punto(x, y){
@@ -43,7 +43,7 @@ console.log(p1.distancia(p2))
 
 ```
 
-2. Creando un objeto y usando Createobject().
+**2.** Creando un objeto y usando Createobject().
 
 ```javascript
 const Punto = {
@@ -80,8 +80,34 @@ console.log(p1.distancia(p2))
 
 ```
 
-3. Creando una clase y creando una instancia de la misma.
+**3.** Creando una clase y creando una instancia de la misma. / Sintaxis Sugar
 
 ```javascript
+class Punto {
+	constructor(x, y){
+		this.x = x
+		this.y = y
+	}
+	moverEnX(x){
+		this.x += x
+	}
+	moverEnY(y){
+		this.y += y
+	}
+	distancia(p){
+		const x = this.x - p.x
+		const y = this.y - p.y
+		return Math.sqrt(x * x + y * y)
+	}
+}
 
+const p1 = new Punto (0, 4)
+const p2 = new Punto (3, 0)
+
+console.log(p1.distancia(p2))
+console.log(p2.distancia(p1))
+p1.moverEnX(10)
+console.log(p1.distancia(p2))
+p2.moverEnY(-4)
+console.log(p1.distancia(p2))
 ```
