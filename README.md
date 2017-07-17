@@ -12,7 +12,8 @@ El indentificador no puede ser reasignado.
 ## Hay tres formas de crear objetos:
 
 1. Creando una función y usando prototipos.
-```
+
+```javascript
 function Punto(x, y){
 	this.x = x
 	this.y = y
