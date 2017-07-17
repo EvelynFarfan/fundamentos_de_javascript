@@ -19,6 +19,7 @@ function saludar() {
 saludar()
 console.log(`La  variable name tiene el valor ${name}`)
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function saludar10(name){
 	for(var i = 0; i < 10; i++){
@@ -27,6 +28,8 @@ function saludar10(name){
 	console.log(`El valor de i es: ${i}`)
 }
 saludar10("Mía")
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 
 function saludar20(name){
 	const nombre = "Ana"
