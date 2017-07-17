@@ -39,8 +39,8 @@ function doble(...numeros){
 
 const doble = (...numeros) => numeros.map (numero => numero * 2 )
 
-// FILTER
 
+// FILTER
 function pares(...numeros){
 	const resultado = []
 	for (let i = 0; i < numeros.length; i++){
@@ -57,3 +57,5 @@ function pares(...numeros){
 		return numero % 2 == 0 
 	})
 }
+
+const pares = (...numeros) => numeros.filter(numero => numero % 2 == 0)
