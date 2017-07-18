@@ -151,7 +151,7 @@ hablar.apply(yeison, lenguajes);
 El método apply, funciona igual que call, permitiendo referencia this en el primer parámetro, pero este nos permite pasar un array, como los parámetros de la funcion.
 
 
-###Métodos call() y apply(): A diferencia de bind(). call() y apply()
+### Métodos call() y apply(): A diferencia de bind(). call() y apply()
 ejecutan la función 'padre' instantaneamente. De igual forma nos permiten establecer el scope y los parametros con la pequeña diferencia
 de apply, recibe los parametros en un array.
 
