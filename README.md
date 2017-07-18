@@ -160,3 +160,17 @@ lenguajes[0],lenguajes[1],lenguajes[2]);
 
 hablaYeison();
 ```
+
+### Asignación con new
+Otro caso, es cuando invocamos this en un constructor , como el siguiente ejemplo:
+
+```javascript
+let Animal = function(color, nombre, tipo) {
+ this.color = color;
+ this.nombre = nombre;
+ this.tipo = tipo;
+}
+const bipa = new Animal(‘gris’, ‘Bipa’, ‘Felino’);
+```
+En este caso, this hace referencia al objeto que se instanciando.
+Aquí el código del ejemplo, para que puedas modificarlo y ver cómo funciona.
