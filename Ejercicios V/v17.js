@@ -14,7 +14,7 @@ class Persona {
 }
 const sacha = new Persona('Sacha',  ['Pedro', 'Juan', 'Pepe'])
 
-
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 class Persona {
 	constructor (nombre, amigos = [] ){
@@ -29,7 +29,7 @@ class Persona {
 }
 const sacha = new Persona('Sacha',  ['Pedro', 'Juan', 'Pepe'])
 
-
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 class Persona {
 	constructor (nombre, amigos = [] ){

@@ -1,7 +1,7 @@
 // Expreds Operator
 
 
-// REDUCE
+// REDUCE - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function suma(...sumandos){
 	let acum = 0
 	console.log(sumandos)
@@ -22,7 +22,7 @@ function suma(...numeros){
 suma (4, 8, 12, 8954, 7)
 
 
-// MAP
+// MAP - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function doble(...numeros){
 	const resultado = []
 	for(let i = 0; i < numeros.length; i++){
@@ -40,7 +40,7 @@ function doble(...numeros){
 const doble = (...numeros) => numeros.map (numero => numero * 2 )
 
 
-// FILTER
+// FILTER - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 function pares(...numeros){
 	const resultado = []
 	for (let i = 0; i < numeros.length; i++){
