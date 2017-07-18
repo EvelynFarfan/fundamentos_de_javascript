@@ -124,3 +124,39 @@ Cuando this es invocado dentro de un método, implícitamente este hace referenc
 
 > Asignación explícita
 En el caso de asignación implícita, this hace referencia al objeto, que contenía el método donde se invoca this, pero si tenemos una función y deseamos explícitamente asignarle a que va a hacer referencia this, desde ES5 contamos con los métodos call(), apply() y bind().
+
+```javascript
+const hablar = function(l1, l2, l3) {
+  console.log(`Hola mi nombre es ${this.nombre}
+               y se programar en ${l1}, ${l2}, ${l3}.`);
+};
+const yeison = {
+  nombre: ‘Yeison’,
+  edad: 22
+};
+const lenguajes = [‘JavaScript’, ‘Python’, ‘C’]
+```
+### call()
+```javascript
+hablar.call(yeison, lenguajes[0],lenguajes[1],lenguajes[2]);
+```
+
+El método call nos permite definir a que va a hacer referencia this, en su primer parámetro, los parámetros siguientes son los parámetros que recibe la función.
+
+
+### apply()
+```javascript
+hablar.apply(yeison, lenguajes);
+```
+El método apply, funciona igual que call, permitiendo referencia this en el primer parámetro, pero este nos permite pasar un array, como los parámetros de la funcion.
+
+
+### bind()
+Este método funciona diferente a los anteriores, este nos devuelve una función, en dónde this, hace referencia al objeto que pasamos en su parámetro.
+
+```javascript
+const hablaYeison = hablar.bind(yeison,
+lenguajes[0],lenguajes[1],lenguajes[2]);
+
+hablaYeison();
+```
