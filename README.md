@@ -151,6 +151,18 @@ hablar.apply(yeison, lenguajes);
 El método apply, funciona igual que call, permitiendo referencia this en el primer parámetro, pero este nos permite pasar un array, como los parámetros de la funcion.
 
 
+- Métodos call() y apply(): A diferencia de bind(). call() y apply()
+ejecutan la función 'padre' instantaneamente. De igual forma nos permiten establecer el scope y los parametros con la pequeña diferencia
+de apply, recibe los parametros en un array.
+
+```javascript
+fun.call(contexto, primerParametro, segundoParametro)
+// ejecuta fun en el scope establecido y con los parametros enviados
+
+fun.apply(contexto, [primerParametro, segundoParametro])
+// ejecuta fun en el scope establecido y con los parametros enviados en el array.
+````
+
 ### bind()
 Este método funciona diferente a los anteriores, este nos devuelve una función, en dónde this, hace referencia al objeto que pasamos en su parámetro.
 
@@ -159,6 +171,19 @@ const hablaYeison = hablar.bind(yeison,
 lenguajes[0],lenguajes[1],lenguajes[2]);
 
 hablaYeison();
+```
+
+### Método bind()
+Es un método de todas las funciones, el cual nos devuelve una función para ser invocada en cualquier momento. Se caracteriza por permitirnos definir el scope- contexto y por permitir establecer previamente parametros.
+
+```javascript
+const newfunction = fun.bind(contexto, primerParametro)
+// Establece el scope y el-los parametros
+
+newFunction(segundoParametro)
+// Ejecuta fun pero con la caracteristica de que ya establecido el 
+// scope y los parametros.
+// Igualmente nos permite enviarle más parametros a fun si es el caso. 
 ```
 
 ### Asignación con new
