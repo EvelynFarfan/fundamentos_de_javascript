@@ -40,7 +40,6 @@ p1.moverEnX(10)
 console.log(p1.distancia(p2))
 p2.moverEnY(-4)
 console.log(p1.distancia(p2))
-
 ```
 
 **2.** Creando un objeto y usando Createobject() / Declarar objetos con Object.create.
@@ -76,8 +75,7 @@ console.log(p2.distancia(p1))
 p1.moverEnX(10)
 console.log(p1.distancia(p2))
 p2.moverEnY(-4)
-console.log(p1.distancia(p2))
-
+console.log(p1.distancia(p2)
 ```
 
 **3.** Creando una clase y creando una instancia de la misma. / Sintaxis Sugar / Declarar objectos con class

@@ -27,3 +27,15 @@ sacha = {
 
 
 // Variable no tan variable ...
+
+
+// No se puede reasignar un valor a una constante(Const)
+const edad = 26
+edad++
+
+// IIFE
+// Immediately Invoked Function Expression
+const nombre = 'Sacha';
+; (function saludar(){
+	console.log(`Hola ${nombre}`)
+})() 
