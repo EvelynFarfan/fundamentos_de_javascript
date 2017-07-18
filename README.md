@@ -182,7 +182,9 @@ class Persona {
 		this.amigos = amigos
 	}
 	listarAmigos() {
-		// cuando se define una arrow function dentro de cuerpo de esa función "this" va a tomar el valor que tiene "this" fuera del contexto en el cual fue declarada la función.
+		// cuando se define una arrow function dentro de cuerpo de esa función "this" 
+		// va a tomar el valor que tiene "this" fuera del contexto en el cual fue 
+		// declarada la función.
 		this.amigos.forEach((amigo) => {
 			console.log(`Hola, mi nombre es ${this.nombre} y soy amigo de ${amigo}`)
 		})
