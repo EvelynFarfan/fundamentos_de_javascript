@@ -174,3 +174,19 @@ const bipa = new Animal(‘gris’, ‘Bipa’, ‘Felino’);
 ```
 En este caso, this hace referencia al objeto que se instanciando.
 Aquí el código del ejemplo, para que puedas modificarlo y ver cómo funciona.
+
+> ``` javascript
+class Persona {
+	constructor (nombre, amigos = [] ){
+		this.nombre = nombre
+		this.amigos = amigos
+	}
+	listarAmigos() {
+		// cuando se define una arrow function dentro de cuerpo de esa función "this" va a tomar el valor que tiene "this" fuera del contexto en el cual fue declarada la función.
+		this.amigos.forEach((amigo) => {
+			console.log(`Hola, mi nombre es ${this.nombre} y soy amigo de ${amigo}`)
+		})
+	}
+}
+const sacha = new Persona('Sacha',  ['Pedro', 'Juan', 'Pepe'])
+```
