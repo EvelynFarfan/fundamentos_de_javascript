@@ -175,7 +175,7 @@ const bipa = new Animal(‘gris’, ‘Bipa’, ‘Felino’);
 En este caso, this hace referencia al objeto que se instanciando.
 Aquí el código del ejemplo, para que puedas modificarlo y ver cómo funciona.
 
-> ``` javascript
+``` javascript
 class Persona {
 	constructor (nombre, amigos = [] ){
 		this.nombre = nombre
