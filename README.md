@@ -118,3 +118,9 @@ Eleva las variables(var) a primera instancia
 
 ## Closes
 Funciones que revuerdan el scope (entorno) en el cual fueron creadas y pueden acceder a todas las variables, funciones que pertenecen a ese scope, pero con los valores que tienen esas variables, funciones al momento momento en que invocamos a la función closes.
+
+## This
+Cuando this es invocado dentro de un método, implícitamente este hace referencia al objeto que contiene el método, sin importar si el método es añadido luego de haber sido creado el objeto, o si es una función que retorna un objeto.
+
+> Asignación explícita
+En el caso de asignación implícita, this hace referencia al objeto, que contenía el método donde se invoca this, pero si tenemos una función y deseamos explícitamente asignarle a que va a hacer referencia this, desde ES5 contamos con los métodos call(), apply() y bind().

@@ -36,6 +36,6 @@ edad++
 // IIFE
 // Immediately Invoked Function Expression
 const nombre = 'Sacha';
-; (function saludar(){
+;(function saludar(){
 	console.log(`Hola ${nombre}`)
 })() 
