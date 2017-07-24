@@ -11,3 +11,6 @@ setTimeout(function(){
 	console.log('medio')
 }, 0)
 console.log('chau')
+
+// Mantener la  pija de ejecución lo nás limpia posible.
+

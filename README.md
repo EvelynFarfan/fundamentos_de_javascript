@@ -231,12 +231,12 @@ https://babeljs.io/
 
 ### Razones: 
 
-1. Encapsulamiento
+**1.** Encapsulamiento
 Todo lo que pasa en un pedaso de código tiene que se local a ese código, de esa manera desacoplamos
 nuestro código y cada parte se hace responsable de cumplir una tarea. Cada módulo debe ser pequeño y 
 encargarse de una sola responsabilidad.
 
-2. Dependencias
+**2.** Dependencias
 Para que podamos requerir módulos de otros módulos y hacer nuestro código más limpio.
 
 ¿Qué es un módulo?
