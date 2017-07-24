@@ -245,10 +245,10 @@ pedaso que código que se encarga de resolver un problema
 
 ### Módulos de que existen
 
-** 1. Function Scope **
+** 1. Function Scope ** __
 Encapsular código en el scope de una función (llamar como módulo), no funciona tanto para el lado de dependencias.
 
-** 2. Common.js **
+** 2. Common.js ** <br>
 Nos permite escribir modulo.export y exportar una función, objeto o más de una cosa (export.atributo)
 Sincrono
 Se debe tener una libreria para ensamblar todo.
