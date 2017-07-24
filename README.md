@@ -151,9 +151,8 @@ hablar.apply(yeison, lenguajes);
 El método apply, funciona igual que call, permitiendo referencia this en el primer parámetro, pero este nos permite pasar un array, como los parámetros de la funcion.
 
 
-### Métodos call() y apply(): A diferencia de bind(). call() y apply()
-ejecutan la función 'padre' instantaneamente. De igual forma nos permiten establecer el scope y los parametros con la pequeña diferencia
-de apply, recibe los parametros en un array.
+### Métodos call() y apply(): 
+A diferencia de bind(). call() y apply() ejecutan la función 'padre' instantaneamente. De igual forma nos permiten establecer el scope y los parametros con la pequeña diferencia de apply, recibe los parametros en un array.
 
 ```javascript
 fun.call(contexto, primerParametro, segundoParametro)
@@ -217,7 +216,6 @@ class Persona {
 }
 const sacha = new Persona('Sacha',  ['Pedro', 'Juan', 'Pepe'])
 ```
-
 ## ECMAScript
 Estándar en que se basa JavaScript
 ECMASCRIPT 5  es complatiple en la mayoria de navegadores (< IE8 no)
@@ -264,4 +262,4 @@ Hacemos import y export en cada módulo.
 5. System-js
 Universal
 Sincronos y asincronos
- 
+
