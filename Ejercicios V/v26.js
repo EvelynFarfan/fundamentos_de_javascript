@@ -1,6 +1,19 @@
 // PROMESAS
 // son basicamente son objetos
-// en el constructor pasamos una fucnion 
+// en el constructor pasamos una funcion 
+
+// const promise =  new Promise(function(resolve, reject){
+// 	setTimeout(function(){
+// 		reject(new Error(`Se produjo un error`)
+// 	}, 1000)
+// })
+// promise
+// 	.theme(function(){
+
+// 	})
+// 	.catch(function(err){
+
+// 	})
 
 function get(URL){
 	return new Promise((resolve, reject) => {
@@ -11,25 +24,24 @@ function get(URL){
 			const OK = 200
 			if (this.readyState === DONE) {
 				if(this.status === OK){
-					//Todo OK
+					// resolve significa que se hizo todo bien
 					resolve(JSON.parse(this.responseText))
 				}else {
-					//Jubo un error
-					reject(newError(`Se produjo un error al realizar el request ${this.status}`))
+					//reject solo enviar el error
+					reject(new Error(`Se produjo un error al realizar el request ${this.status}`))
 				}
 			}
 		}
+		xhr.open('GET', URL);
+		xhr.send(null);
 	})
 }
-
 /* Funcion para tratar el error */
 function handleError(err){
 	console.log(`Request failed: ${err}`)
 }
-
-/*llamada al metodo */
-let luke; 
-get('http://www.swapi.co/api/people/1/'){
+let luke
+get('http://www.swapi.co/api/people/1/')
 	.then((response) => {
 		luke = response
 		return get(luke.homeworld)
@@ -38,5 +50,4 @@ get('http://www.swapi.co/api/people/1/'){
 		luke.homeworld = homeworld
 		console.log(`${luke.name} nació en ${luke.homeworld.name}`)
 	})
-	.catch(err => handleError(err)
-}
+	.catch(err => handleError(err))
