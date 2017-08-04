@@ -1,0 +1,4 @@
+# REQUISITOS TÉCNICOS : NPM EJERCICIO
+
+**1.** 
+
