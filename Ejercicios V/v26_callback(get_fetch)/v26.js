@@ -92,4 +92,3 @@ fetch('https://www.swapi.co/api/people/1/')
 		console.log(`${luke.name} nació en ${luke.homeworld.name}`)
 	})
 	.catch(err => handleError(err))
-         

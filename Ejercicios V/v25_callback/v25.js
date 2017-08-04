@@ -39,3 +39,6 @@ get('http://www.swapi.co/api/people/1/', function onResponse(err, luke){
 	console.log(`Request succeded`)
 	console.log('luke', luke)
 })
+
+// Ejemplos:
+// https://carlosazaustre.es/blog/manejando-la-asincronia-en-javascript/
